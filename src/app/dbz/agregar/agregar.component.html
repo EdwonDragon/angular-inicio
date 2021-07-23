@@ -1,0 +1,39 @@
+<h3>Agregar</h3>
+      <hr />
+
+      <form (ngSubmit)="agregar()">
+        <div class="input-group">
+          <div class="col-3">
+            <span class="input-group-text" id="addon-wrapping">Nombre</span>
+          </div>
+          <input
+            type="text"
+            class="form-control"
+            name="nombre"
+            [(ngModel)]="nuevo.nombre"
+            placeholder="Nombre"
+          />
+        </div>
+
+        <div class="input-group">
+          <div class="col-3">
+            <span class="input-group-text" id="addon-wrapping">Poder</span>
+          </div>
+          <input
+            type="text"
+            class="form-control"
+            name="poder"
+            [(ngModel)]="nuevo.poder"
+            placeholder="Poder"
+          />
+        </div>
+
+        <!-- [value]="nuevo.poder"
+        (input)="cambiarNombre($event)" -->
+
+        <div class="row p-2 text-center">
+          <div class="col-md-3">
+            <button type="submit" class="btn btn-primary">Agregar</button>
+          </div>
+        </div>
+      </form>
